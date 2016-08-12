@@ -1,0 +1,1 @@
+[[1, 2], [3, 4],['s','d'],[null,'s'],[undefined,undefined]].map(([a=1, b=1]) => console.log(a + b));
