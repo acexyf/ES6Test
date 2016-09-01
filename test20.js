@@ -1,4 +1,16 @@
-let temp=2;
+var promise=new Promise(function(resolve,reject){
+	console.log('new');
+	resolve();
+});
 
-console.log('123'.padStart(6,'0'));
+
+promise.then(function(value){
+	console.log('resolve');
+},function(err){
+
+});
+
+
+console.log('outer');
+
 
