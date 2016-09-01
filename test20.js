@@ -1,24 +1,29 @@
-var data=[
-	{
-		id:1
-	},
-	{
-		id:2
-	},
-	{
-		id:1
-	},
-	{
-		id:2
-	},
-	{
-		id:1
-	},
-	{
-		id:2
-	}
-]
+var promise=new Promise(function(resolve,reject){
+	console.log('new');
+	resolve();
+});
 
-for (let temp of data) {
-  console.log(temp);
-}
+
+promise.then(function(value){
+	console.log('resolve');
+},function(err){
+
+});
+
+
+console.log('outer');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
